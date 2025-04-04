@@ -5,7 +5,7 @@ workflows:
     scripts:
       - name: Install Node Dependencies
         script: |
-          npm install  # Installs expo and other deps
+          npm install --legacy-peer-deps  # Bypass peer dependency conflict
       - name: Build Android Debug APK
         script: |
           cd android
